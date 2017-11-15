@@ -1,0 +1,19 @@
+CDN
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+Add class - Model Text Field - name_img
+
+Add class in href button - popup-btn
+
+<input type="hidden" class="btn_value" value="<?php echo ;?>"/>
+
+
+<script type="text/javascript">
+    jQuery( document ).ready(function() {
+    jQuery(".popup-btn").click(function(e){
+        e.preventDefault();
+    var av = jQuery(this).next('.btn_value').attr('value');
+    jQuery('.name_img').val(av);
+    });
+});
+</script>
